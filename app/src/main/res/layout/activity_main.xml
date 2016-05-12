@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
+    android:background="#ffffff"
     tools:context="com.example.roberto.challengeme.MainActivity">
 
     <android.support.design.widget.TabLayout
@@ -13,7 +14,7 @@
         android:id="@+id/tlTabLayout"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:background="#ffffff"
+        android:background="#0dffbe"
         app:tabMode="fixed"
         app:tabGravity="fill"
         ></android.support.design.widget.TabLayout>
@@ -27,7 +28,8 @@
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/fFragmentContainer">
+        android:id="@+id/fFragmentContainer"
+        >
 
     </FrameLayout>
 

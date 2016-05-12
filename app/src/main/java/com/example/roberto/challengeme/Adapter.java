@@ -14,7 +14,7 @@ import com.example.roberto.challengeme.Fragments.Profile;
 public class Adapter extends FragmentPagerAdapter{
 
 
-    private String Fragments[] = {"Challenges" , "Challenge A Friend", "Profile"};
+    private String Fragments[] = {"Challenges" , "VS Friend", "Profile"};
     public Adapter(android.support.v4.app.FragmentManager fm){
 
         super(fm);
