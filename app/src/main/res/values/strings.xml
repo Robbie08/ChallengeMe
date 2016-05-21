@@ -3,12 +3,14 @@
     <string name="action_settings">Settings</string>
     <string name="title_activity_login">Sign in</string>
 
+    <string name="dummy_text">Dummy</string>
     <!-- Strings related to login -->
     <string name="prompt_email">Email</string>
     <string name="prompt_password">Password </string>
     <string name="action_next">Next</string>
+    <String name="action_register">Register</String>
     <string name="prompt_username">UserName</string>
-    <string name="action_sign_in_short">Sign in</string>
+    <string name="action_sign_in">Log In</string>
     <string name="error_invalid_email">This email address is invalid</string>
     <string name="error_invalid_password">This password is too short</string>
     <string name="error_incorrect_password">This password is incorrect</string>

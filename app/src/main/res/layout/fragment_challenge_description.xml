@@ -5,7 +5,9 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:background="#ffffff"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:paddingRight="16dp"
+    android:paddingLeft="16dp">
 
     <ImageView
         android:id="@+id/ivUserImage"
@@ -21,7 +23,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="24sp"
-        android:hint="Challenge"
+        android:hint="Dummy"
         android:layout_above="@+id/tvPassword"
         android:paddingBottom="10dp"
         android:paddingLeft="10dp"

@@ -60,6 +60,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
     // UI references.
     private AutoCompleteTextView mEmailView;
     private EditText mPasswordView;
+    private TextView mRegister;
     private View mProgressView;
     private View mLoginFormView;
 
@@ -70,6 +71,8 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
         // Set up the login form.
         mEmailView = (AutoCompleteTextView) findViewById(R.id.email);
         populateAutoComplete();
+
+
 
         mPasswordView = (EditText) findViewById(R.id.password);
         mPasswordView.setOnEditorActionListener(new TextView.OnEditorActionListener() {
@@ -97,7 +100,25 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
 
         mLoginFormView = findViewById(R.id.login_form);
         mProgressView = findViewById(R.id.login_progress);
+
+
+        TextView tvRegister =(TextView) findViewById(R.id.tvRegister);
+        tvRegister.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(RegistrationEmailFragment.class);
+                LogInActivity.this.startActivity(intent);
+
+
+
+            }
+        });
+
+
     }
+
+
 
     private void populateAutoComplete() {
         if (!mayRequestContacts()) {

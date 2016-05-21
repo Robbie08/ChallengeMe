@@ -2,6 +2,8 @@ package com.example.roberto.challengeme;
 
 import android.app.Fragment;
 import android.os.Bundle;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -38,10 +40,14 @@ public class EditFragment extends Fragment {
             @Override
             public void onClick(View v) {
 
-                // Setting our text to String
+
+
+                // Converting our text to String
                 sUserName = userName.getText().toString();
                 sChallenge = challenge.getText().toString();
                 sChallengeDescription = ChallengeDescription.getText().toString();
+
+
 
                 //Challenge object
                 Challenge list = new Challenge();
@@ -49,18 +55,27 @@ public class EditFragment extends Fragment {
                 list.setChallenge(sChallenge);
                 list.setChallengeDescription(sChallengeDescription);
 
-                //Users Object
-                Users u = new Users();
 
-                u.setUserName(sUserName);
 
-                /////////////////////////////////////////////////////////////
-                //                                                         //
-                //                                                         //
-                // Create Singleton that will contain all the information  //
-                //                                                         //
-                //                                                         //
-                /////////////////////////////////////////////////////////////
+                //Challengers Object
+                Challengers ch = new Challengers();
+
+                ch.setChallengrs(sChallenge);
+                Singleton.get(getActivity()).addChallengers(ch);
+
+
+                ///////////////////////////////////////////////////////////////////////
+                //                                                                   //
+                //                                                                   //
+                // Create ViewFragment object that will contain all the information  //
+                //                                                                   //
+                //                                                                   //
+                ///////////////////////////////////////////////////////////////////////
+
+               // Fragment fragment = new ViewFragment();    <---------- FIX THIS !!!!!
+
+
+
             }
 
 
