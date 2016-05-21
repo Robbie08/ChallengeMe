@@ -107,8 +107,8 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(RegistrationEmailFragment.class);
-                LogInActivity.this.startActivity(intent);
+                Intent intent = new Intent(getApplicationContext(),RegistrationEmailFragment.class);
+                LoginActivity.this.startActivity(intent);
 
 
 

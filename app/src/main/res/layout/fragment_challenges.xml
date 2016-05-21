@@ -40,10 +40,23 @@
         android:paddingLeft="10dp"
         />
 
+        android:layout_width=""
+        android:layout_height=""/>
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_gravity="center_horizontal"></RelativeLayout>
+        android:layout_gravity="center_horizontal">
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Challenge"
+            android:id="@+id/bAddChallenge"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
 
 
 </LinearLayout>

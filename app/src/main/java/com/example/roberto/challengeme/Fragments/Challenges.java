@@ -5,6 +5,7 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -18,6 +19,8 @@ public class Challenges extends Fragment {
     TextView challenge; // Declaration for challenge text
     TextView userName;
     ImageView userImage;
+    Button addChallenge;
+
 
     @Override
     public void onCreate(Bundle savedInstance)
@@ -33,8 +36,19 @@ public class Challenges extends Fragment {
         TextView challenge = (TextView) view.findViewById(R.id.tvChallenge);
         TextView userName = (TextView) view.findViewById(R.id.tvUserName);
         ImageView userImage = (ImageView) view.findViewById(R.id.ivUserImage);
+        Button addChallenge = (Button) view.findViewById(R.id.bAddChallenge);
+     addChallenge.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View view) {
 
-        
+
+
+
+
+
+
+    }
+});
 
 
         return view;

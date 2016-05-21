@@ -5,13 +5,21 @@ package com.example.roberto.challengeme;
  *
  * Class that holds all the characteristics of the Challenge
  */
-public class Challenge {
+public class Challenge{
 
-    private String Challenge;
+    private String ChallengeTitle;
     private String ChallengeDescription;
 
+    public Challenge(String chall,String challD){
+        ChallengeTitle = chall;
+        ChallengeDescription = challD ;
+    }
+    public Challenge(){
+
+    }
+
     public String getChallenge() {
-        return Challenge;
+        return ChallengeTitle;
     }
 
     public String getChallengeDescription(){
@@ -22,10 +30,6 @@ public class Challenge {
 
     public void setChallengeDescription(String ChallengeDescription){ChallengeDescription = ChallengeDescription;}
 
-    public void ListInfomtion(String chall,String challD){
-        Challenge = chall;
-        ChallengeDescription = challD ;
-    }
 
 
 }
