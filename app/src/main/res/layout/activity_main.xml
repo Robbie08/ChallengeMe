@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-   xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    android:background="#ffffff"
-    tools:context="com.example.roberto.challengeme.MainActivity">
+    android:background="#ffffff">
+
 
     <android.support.design.widget.TabLayout
         android:layout_width="match_parent"
@@ -16,21 +15,23 @@
         android:layout_centerHorizontal="true"
         android:background="#0dffbe"
         app:tabMode="fixed"
-        app:tabGravity="fill"
-        ></android.support.design.widget.TabLayout>
+        app:tabGravity="fill"/>
+
+
     <android.support.v4.view.ViewPager
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/vPager"
         android:layout_below="@+id/tlTabLayout"
-        android:layout_centerHorizontal="true"
-        ></android.support.v4.view.ViewPager>
+        android:layout_centerHorizontal="true"/>
+
     <FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/fFragmentContainer"
-        >
+       />
 
-    </FrameLayout>
+
 
 </RelativeLayout>

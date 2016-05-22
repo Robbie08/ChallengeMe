@@ -10,8 +10,6 @@ import android.widget.EditText;
 import com.example.roberto.challengeme.Challenge;
 import com.example.roberto.challengeme.R;
 
-import java.util.ArrayList;
-
 /**
  * Created by joshua on 5/21/2016.
  */
@@ -20,12 +18,13 @@ public class AddChallenge extends Fragment {
      EditText etAddChallenge;
      EditText etAddDescription;
 
-      ArrayList<Challenge> arrayCh;//Eventually add challenges to database.
+     // ArrayList<Challenge> arrayCh;//Eventually add challenges to database.
 
     @Override
     public void onStart(){
+
         super.onStart();
-        arrayCh = new ArrayList<Challenge>();
+      //  arrayCh = new ArrayList<>();
 
 
     }
@@ -43,7 +42,7 @@ public class AddChallenge extends Fragment {
         String challengeDescription = etAddDescription.getText().toString();
 
         Challenge  userInput = new Challenge(challengeTitle,challengeDescription);
-        arrayCh.add(userInput);
+        //arrayCh.add(userInput);
 
 
 

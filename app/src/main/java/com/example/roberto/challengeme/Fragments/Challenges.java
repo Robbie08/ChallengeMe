@@ -2,6 +2,7 @@ package com.example.roberto.challengeme.Fragments;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -41,11 +42,13 @@ public class Challenges extends Fragment {
     @Override
     public void onClick(View view) {
 
+        //Intent intent = new Intent(getContext(),AddChallenge.class);
+        //startActivity(intent);
 
-
-
-
-
+            Fragment newFragment = new AddChallenge();
+            FragmentTransaction transaction = getFragmentManager().beginTransaction();
+            transaction.replace(R.id.fFragmentContainer, newFragment);
+            transaction.commit();
 
     }
 });
